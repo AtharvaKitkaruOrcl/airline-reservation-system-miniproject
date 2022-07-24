@@ -1,3 +1,4 @@
+
 :root {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
@@ -9,15 +10,6 @@
     --platinum: #e8e9e7ff;
 }
 
-
-code {
-    font-family: 'Fira Code', monospace;
-}
-
-::selection {
-    background-color: var(--carolina-blue);
-    color: white;
-}
 body{
     width: 100vw;
     height: 100vh;
@@ -25,6 +17,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: brightness(30%);
+}
+code {
+    font-family: 'Fira Code', monospace;
+}
+
+::selection {
+    background-color: var(--carolina-blue);
+    color: white;
 }
 .home-container{
     padding: 0;
@@ -67,6 +67,14 @@ body{
     margin-right: 0%;
     color: white;   
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type=number] {
+  -moz-appearance: number;
+}
 :focus{
     /* border: none; */
     outline: none !important;
@@ -78,7 +86,7 @@ body{
     color: #e5e5e5;
     /* text-align: center; */
 }
-.login-heading{
+.register-heading{
     color: white;
 }
 
@@ -94,7 +102,7 @@ body{
     border-radius: 1em;
     cursor: pointer;
 }
-.register-link{
+.login-link{
     
     margin-top: 2em;
     margin-bottom: 0;
@@ -102,7 +110,7 @@ body{
     font-size: 0.85em;
     
 }
-.register-link a{
+.login-link a{
     
     outline: none;
     color: white;

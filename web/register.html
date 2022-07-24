@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="register.css">
 
 </head>
 
@@ -18,24 +18,39 @@
     <div id="snackbar">Some text some message..</div>
     <div class="home-container">
         <div class="box">
-            <form action="#" class = "login-form">
-                <div class="login-heading">
-                    <center><h4>Login</h4></center>
+            <form action="#" class = "register-form">
+                <div class="register-heading">
+                    <center><h4>Register</h4></center>
                 </div>
                 <div>
                     <input  class = "input" type="email" name="email" id="email" placeholder="Enter email">
                 </div>
                 <div>
+                    <input class = "input" type="username" name="username" id="username" placeholder="Enter Username">
+                </div>
+                <div>
                     <input class = "input" type="password" name="username" id="username" placeholder="Enter password">
                 </div>
+                <div>
+                    <input class = "input" type="number" name="age" id="age" placeholder="Enter Age">
+                </div>
+                <!-- <div>
+                    <label for="gender">Select Gender</label>
+                    <br>
+                    <select class = "form-control" name="gender" id="gender" aria-placeholder="Select Gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                </div> -->
                 <div>
                     <center>
                         <input type="submit" value="Submit" class="submit-btn" onclick="toast()">
                     </center>
                 </div>
-                <div class="register-link">
+                <div class="login-link">
                     <center>
-                        <a href="register.html">Register here</a>
+                        <a href="auth.html">Login here</a>
                             
                         
                     </center>
@@ -58,7 +73,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="auth.js"></script>
+    <script src="register.js"></script>
 </body>
 
 </html>
