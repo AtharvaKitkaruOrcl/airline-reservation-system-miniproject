@@ -1,0 +1,96 @@
+:root {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+
+    --spanish-blue: #0170b2ff;
+    --carolina-blue: #019bdaff;
+    --cerulean-crayola: #2aafd8ff;
+    --cultured: #edeeebff;
+    --platinum: #e8e9e7ff;
+}
+
+
+code {
+    font-family: 'Fira Code', monospace;
+}
+
+::selection {
+    background-color: turquoise;
+    color: white;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/miniature-airplane-travel-theme_93675-128391.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(30%);
+}
+.home-container{
+    padding: 0;
+    margin: 0;
+    width: 100vh;
+    height: auto;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vh;
+    border-radius: 1em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background: rgba(250, 243, 243, 0.15);
+    border: 2px solid rgba(79, 76, 76, 0.1);
+    box-shadow: 0 0 40px rgba(33, 33, 35, 0.6);
+    backdrop-filter:   blur(10em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in;
+}
+
+.input{
+    background-color: rgba(250, 243, 243, 0.3);
+    border-radius: 3px;
+    width: 40vh;
+    border: none;
+    cursor: text;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0%;
+    margin-right: 0%;
+    color: white;   
+}
+:focus{
+    /* border: none; */
+    outline: none !important;
+    border:1px solid var(--spanish-blue);
+    box-shadow: 0.0em 0.0em 0.1em 0.1em #719ECE;
+    transition: ease-in-out .1s 
+}
+::placeholder{
+    color: #e5e5e5;
+    /* text-align: center; */
+}
+.login-heading{
+    color: white;
+}
+
+.submit-btn{
+    margin-top: 2em;
+    width: 100%;
+    background-color: #ffffff;
+    color: #514e61;
+    padding: 0.5em 0;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+}
