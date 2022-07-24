@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+    <div id="snackbar">Some text some message..</div>
     <div class="home-container">
         <div class="box">
             <form action="#" class = "login-form">
@@ -30,12 +30,14 @@
                 </div>
                 <div>
                     <center>
-                        <input type="submit" value="Submit" class="submit-btn">
+                        <input type="submit" value="Submit" class="submit-btn" onclick="toast()">
                     </center>
                 </div>
 
             </form>
+            
         </div>
+        
     </div>
     
     <!-- cdn scripts -->
@@ -49,7 +51,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="auth.js"></script>
 </body>
 
 </html>
